@@ -17,14 +17,14 @@
     <input type="password" id="password" class="form-control" runat="server" />
     <label class="form-label" for="form2Example2">Password</label>
       <br />
-     <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="password" ErrorMessage="The password must be between 8 and 25 character" MaximumValue="8" MinimumValue="25"></asp:RangeValidator>
+     <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="password" ErrorMessage="The password must be between 8 and 25 character" MaximumValue="25" MinimumValue="8" Type="Integer"></asp:RangeValidator>
 
   </div>
 
  
 
   <!-- Submit button -->
-  <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+  <button type="button" class="btn btn-primary btn-block mb-4" runat="server">Sign in</button>
 
   <!-- Register buttons -->
   <div class="text-center">
@@ -101,7 +101,7 @@
    ]
 
   <!-- Submit button -->
-  <button type="button" class="btn btn-primary btn-block mb-4">Sign Up</button>
+  <button type="button" class="btn btn-primary btn-block mb-4" runat="server">Sign Up</button>
 
   <!-- Register buttons -->
   <div class="text-center">
